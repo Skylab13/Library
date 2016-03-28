@@ -6,7 +6,6 @@
      <link rel="stylesheet" href="css/global.css">
      <link rel="stylesheet" type="text/css" href="css/container.css">
      <link rel="stylesheet" type="text/css" href="Font-Awesome-master/css/font-awesome.min.css">
-
   <script src="javascript/jquery.min.js"></script>
   <script src="javascript/slides.min.jquery.js"></script>
   <script>
@@ -39,20 +38,23 @@
   </script>
 </head>
 <body>
+
   <div class="top-wrapper"><!--页头-->
     <header>
       <nav>
       <div class="logo">  </div>
         <ul>
-          <li><a href="#">首页</a></li>
+          <li><a id="first_page" href="Library.html">首页</a></li>
           <li><a href="#">往期活动</a></li>
           <li><a href="#">互动课堂</a></li>
-          <li><a href="#">登录/注册</a></li>
+          <li><a href="#"><b>登录/注册</b></a></li>
         </ul>
       </nav>
    
     </header> 
-  </div><!--#end header-->
+    </div>
+    <div class="outside" id="outside">
+<!--#end header-->
       <!--页面主体-->
       <div class="content" id="container"> 
       <!--图片轮播-->   
@@ -139,7 +141,7 @@
                  </a>
                  <dd  class="fr" >
                    <h3>
-                     <a class="item_new_title" href="" target="_blank" title="考研之路" > 考研讲座 </a>
+                     <a class="item_new_title todetails" id="todetails1" href="pages/details.html" target="iframe1" title="考研之路" > 考研讲座 </a>
                    </h3>
                    <div class="introduce">
                       <p>
@@ -170,7 +172,7 @@
                  </a>
                  <dd  class="fr" >
                    <h3>
-                     <a class="item_new_title" href="" target="_blank" title="考研之路" > 考研讲座 </a>
+                     <a class="item_new_title todetails" id="todetails2" href="pages/details.html" target="iframe1" title="考研之路" > 考研讲座 </a>
                    </h3>
                    <div class="introduce">
                       <p>
@@ -208,7 +210,7 @@
               </a>
               <!--字链接主题-->
               <div class="old-1-info">
-                <a href="#">
+                <a class="todetails" href="pages/details.html" target="iframe1" id="todetails3">
                   <h4>考研讲座</h4>
                 </a>
                 <small>这是一个深刻的故事</small>
@@ -238,7 +240,7 @@
               </a>
               <!--字链接主题-->
               <div class="old-1-info">
-                <a href="#">
+                <a class="todetails" href="pages/details.html" target="iframe1" id="todetails4">
                   <h4>考研讲座</h4>
                 </a>
                 <small>这是一个深刻的故事</small>
@@ -269,7 +271,7 @@
               </a>
               <!--字链接主题-->
               <div class="old-1-info">
-                <a href="#">
+                <a class="todetails" href="pages/details.html" target="iframe1" id="todetails5">
                   <h4>考研讲座</h4>
                 </a>
                 <small>这是一个深刻的故事</small>
@@ -292,12 +294,9 @@
                   <i class="fa fa-user-secret"></i>
                 </div>
             </div>
-          </div>
-
           </div>
 
         </section>
-        </div>
 
 
         <div class="left-content">
@@ -307,8 +306,10 @@
         <p class="intro_con">如果你想分享你的故事，那么赶快报名吧。</p>
         <button class="intro_btn">我要报名</button>
         </section>
-          
         </div>
+           
+  </div>
+
         <footer><!--页脚-->
           <ul class="share-group">  
                <li><i class="fa fa-weibo"></i></li>
@@ -322,8 +323,9 @@
           
         </footer>
 
-      </div>
+      </div> 
+        <iframe src="pages/details.html" class="iframe1" id="iframe1" name="iframe1"></iframe>
 
-
+  <script type="text/javascript" src="javascript/details.js"></script>
 </body>
 </html>
